@@ -25,6 +25,9 @@ python3 index.py
 2.  添加服务器端接口地址到url,http:127.0.0.1/upload
 ### 演示地址
 
+![Uploading Fp-wraSIIgkqX4xGGM1W8JUESd03.jpg…]()
+![Uploading ，.jpg…]()
+
 ### 联系我们
 
 如果你有任何问题或建议，欢迎通过以下方式联系我们： 
