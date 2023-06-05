@@ -20,9 +20,15 @@ pip3 install -r requirements.txt
 python3 index.py
 ```
 本地接口地址为http://127.0.0.1:5000（如果是服务器，则修改为服务器ip）
+
 二、前端部署
+
 1.  下载小程序项目miniprogram到本地，微信开发者工具导入项目
-2.  添加服务器端接口地址到url,http:127.0.0.1/upload
+2.  添加服务器端接口地址到url,
+```
+url: '替换为你的后端接口地址http:127.0.0.1/upload
+```
+
 ### 演示地址
 
 ![Fp-wraSIIgkqX4xGGM1W8JUESd03](https://github.com/smallnew666/MemeCam_ChatGPT/assets/24582880/c494ecbb-e931-46b3-8c1f-57d7c6f85af1)
