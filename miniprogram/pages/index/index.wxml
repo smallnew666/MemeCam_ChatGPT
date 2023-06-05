@@ -1,0 +1,46 @@
+<view class="upload-camera" wx:if="{{showPage=='1'}}">
+  <vidw class="uc-container">
+    <vidw class="page-title">
+    <h2>欢迎来到AI爆梗相机</h2><p>上传照片或者拍照，剩下的交给AI吧！</p>
+    </vidw>
+    <button bindtap="openPopup" data-index="1" class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedSecondary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedSecondary MuiButton-sizeMedium MuiButton-outlinedSizeMedium thick-btn css-mbwz59" tabindex="0" type="button" id="choose-upload">
+    <image src="../../static/upload.png" style="width: 20px;height: 20px; position: absolute;left: 20px;top: 50%;transform: translateY(-50%);"/>
+   上传照片
+    </button>
+    <view class="capture-container">
+      <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium thick-btn css-19aq1xj" tabindex="0" type="button" id="choose-camera"  bindtap="openCamera">
+      <image src="../../static/cam.png" style="width: 20px;height: 20px; position: absolute;left: 20px;top: 50%;transform: translateY(-50%);"/>
+      使用相机
+      <span class="MuiTouchRipple-root css-w0pj6f"></span>
+      </button>
+    </view>
+  </vidw>
+</view>
+<view class="modal" wx:if="{{showModal=='1'}}" bindtap="closeModal"></view>
+<view class="result" wx:if="{{showRes=='1'}}">
+    <view ><image src="{{imageRes}}" mode="aspectFit" bindtap="previewImage"></image></view>
+    <view style="display: flex;">
+      <button class="share" open-type='share'> <image src="../../static/share.png" style="width: 20px;height: 20px; position: absolute;left: 20px;top: 50%;transform: translateY(-50%);"/>分享</button>
+      <button class="save" bindtap="openSave"> <image src="../../static/download.png" style="width: 20px;height: 20px; position: absolute;left: 20px;top: 50%;transform: translateY(-50%);"/>保存</button>
+    </view>
+    <view style="margin-top:200rpx;" class="close" >
+      <image bindtap="closeRes" src="../../static/close.png" style="width: 100rpx;height: 100rpx; transform: translateY(-50%);"/>
+    </view>
+</view>
+
+
+
+<!-- 中间弹窗 -->
+<view class="info-center" style="top:30%;height:600rpx;" wx:if="{{showIndex=='1'}}">
+  <p style="position: absolute;right:20rpx;top:20rpx;font-size:40rpx;" bindtap="closePopup">X</p>
+  <view class="MuiBox-root css-1yfxrzk">
+  <b style="font-weight: 1000;">上传照片</b>
+  <p class="MuiTypography-root MuiTypography-body1 css-19tcczm">上传照片后点击生成.</p>
+  <p class="MuiTypography-root MuiTypography-body1 css-19tcczm" style="font-size: 20rpx;">服务器不会保存任何数据</p>
+  <view class="upload-field" bindtap="chooseImage">{{imageSrc}}</view>
+  <button class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium css-yf920n" tabindex="0" type="button" bindtap="uploadImage">
+  生成
+  <span class="MuiTouchRipple-root css-w0pj6f"></span>
+  </button>
+  </view>
+</view>
