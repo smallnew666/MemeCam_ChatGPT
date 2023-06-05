@@ -25,13 +25,14 @@ python3 index.py
 2.  添加服务器端接口地址到url,http:127.0.0.1/upload
 ### 演示地址
 
-![Uploading Fp-wraSIIgkqX4xGGM1W8JUESd03.jpg…]()
-![Uploading ，.jpg…]()
+![Fp-wraSIIgkqX4xGGM1W8JUESd03](https://github.com/smallnew666/MemeCam_ChatGPT/assets/24582880/c494ecbb-e931-46b3-8c1f-57d7c6f85af1)
+![，](https://github.com/smallnew666/MemeCam_ChatGPT/assets/24582880/eea5d73c-de99-41a9-a92a-81a0376de5e6)
+
 
 ### 联系我们
 
 如果你有任何问题或建议，欢迎通过以下方式联系我们： 
-- 微信：mr_zabsa，备注拉群
+- 微信群：mr_zabsa，备注拉群
 - 获取更详细教程，欢迎加入知识星球，里面包括免费api key分享，chatgpt教程等相关内容
 ----
 
